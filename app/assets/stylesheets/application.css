@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+body{
+    width: 90%;
+    margin: 0 auto !important;
+    min-height: 10vh;
+    border: 1px solid red; 
+    
+}
+.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark{
+    width: 90%;
+    margin: 0 auto;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10vh;
+}
+
+div.content{
+    width: 100%;
+    min-height: 10vh;
+    background-color: #d9ddde;
+    margin-top: 12vh;
+
+}
