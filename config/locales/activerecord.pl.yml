@@ -1,0 +1,4 @@
+pl:
+  activerecord:
+    models:
+    attributes:
