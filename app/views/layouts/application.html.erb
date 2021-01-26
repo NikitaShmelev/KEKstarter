@@ -38,15 +38,21 @@
               <li class="nav-item" <%= " active" if I18n.locale == :en %>>
                 <%= link_to t("en"), {locale: :en}, :class => 'nav-link'  %>
               </li>
-              <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<%= link_to "Profile", current_user %>
-<%= link_to "Settings", edit_user_path(@user) %>
-              <!-- <% if @user %>
-              <% else %>
-              sadsad
-              <% end %> -->
+              <li class="nav-item" <%= " active" if I18n.locale == :en %>>              
+                <% if current_user%>
+                <%= link_to "Profile", edit_user_registration_url %>
+                <%= link_to "Logout", destroy_user_session_path %>
+                <% else %>
+                  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>
+                <% end %>
+              </li>
+            
+                 
+
+
+              
+            
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
@@ -58,6 +64,7 @@
           </div>
         </div>
       </nav>
+      
     </header>
     
 

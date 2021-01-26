@@ -1,3 +1,26 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+div.sign_up{
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 30vh;
+    margin-top: 7vh;
+    text-align: center;
+}
+div.field{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.form_field{
+    background-color: #e1e4e6;
+    border: 0px;
+    width: 30%;
+    height: 10vh;
+    border-radius: 4px;
+}
+
+.form_field:focus{
+    outline: none;
+    box-shadow: 0 0 3pt 2pt gray;
+}
