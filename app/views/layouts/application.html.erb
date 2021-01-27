@@ -40,7 +40,7 @@
               </li>
               <li class="nav-item" <%= " active" if I18n.locale == :en %>>              
                 <% if current_user%>
-                <%= link_to "Profile", edit_user_registration_url %>
+                <%= link_to "Profile", profile_root_url %>
                 <%= link_to "Logout", destroy_user_session_path %>
                 <% else %>
                   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
